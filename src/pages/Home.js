@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
+import "./Home.css";
 
 function Home() {
   const navigate = useNavigate();
@@ -8,6 +9,16 @@ function Home() {
   const handleProfileClick = () => {
     console.log("프로필 버튼이 클릭되었습니다.");
     navigate("/profile");
+  };
+
+  const handleFriendClick = () => {
+    console.log("친구 버튼이 클릭되었습니다.");
+    navigate("/friend");
+  };
+
+  const handleCategoryClick = () => {
+    console.log("카테고리 버튼이 클릭되었습니다.");
+    navigate("/category");
   };
 
   const handleCardClick = (postId) => {
@@ -33,8 +44,14 @@ function Home() {
       </header>
       <div className="left-box">
         <div className="menu">
-          <button className="menu-button">친구</button>
-          <button className="menu-button">카테고리</button>
+          <button className="menu-button" onClick={handleFriendClick}>
+            <span class="material-symbols-outlined">group</span>
+            <span className="box-text"> 친구</span>
+          </button>
+          <button className="menu-button" onClick={handleCategoryClick}>
+            <span class="material-symbols-outlined">format_list_bulleted</span>
+            <span classnName="box-text"> 카테고리</span>
+          </button>
         </div>
         {/* 왼쪽 박스 내용 */}
       </div>
