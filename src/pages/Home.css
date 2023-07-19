@@ -1,0 +1,135 @@
+/* Home.css */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  position: fixed; /* 상단에 고정 */
+  top: 0; /* 상단에 위치 */
+  width: 100%; /* 가로로 꽉 차도록 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #f1f1f1;
+  z-index: 1; /* 다른 요소 위에 표시되도록 설정 */
+}
+
+.profile-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  margin-right: 70px;
+  cursor: pointer;
+  /* 동그란 프로필 버튼에 대한 추가적인 스타일링은 여기에 작성하시면 됩니다 */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1000px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  /* 검색 창에 대한 추가적인 스타일링은 여기에 작성하시면 됩니다 */
+}
+
+.search-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* 검색 아이콘 버튼에 대한 추가적인 스타일링은 여기에 작성하시면 됩니다 */
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  /* 검색 창에 대한 추가적인 스타일링은 여기에 작성하시면 됩니다 */
+}
+
+.left-box {
+  position: fixed;
+  width: 200px;
+  height: calc(
+    100vh - 50px
+  ); /* 헤더 높이만큼 빼서 메인과 왼쪽 박스의 높이를 조정 */
+  background-color: #e0e0e0;
+  float: left;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.box-text {
+  margin-left: 10px;
+}
+
+.menu {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.menu-button {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px;
+}
+
+.post-grid {
+  margin-left: 200px;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* 가로 5개의 칼럼 */
+  gap: 0px;
+}
+
+.post-card {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 200px; /* 카드의 너비를 200px로 설정 */
+  height: 200px; /* 카드의 높이를 200px로 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.row-gap {
+  height: 20px; /* 원하는 간격으로 설정 */
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+/* 추가적인 스타일링은 여기에 작성하시면 됩니다 */

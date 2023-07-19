@@ -1,0 +1,143 @@
+/*ProfilePage.css*/
+
+.profilepage-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.profilepage-header {
+  position: absolute;
+  height: 200px;
+  margin-left: 100px;
+  z-index: 1;
+  /* 그 외의 스타일 속성 */
+}
+
+.profilepage-profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.profilepage-profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profilepage-profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profilepage-username {
+  margin-left: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.profilepage-edit-button {
+  margin-left: 70px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-color: #75b2d6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profilepage-settings-button {
+  margin-left: 70px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 30px; /* 아이콘 크기를 조정할 값 */
+  transition: transform 0.3s ease; /* 부드러운 효과를 위한 transition 속성 추가 */
+}
+
+.profilepage-edit-button:hover {
+  background-color: #75b2d6;
+  filter: brightness(90%);
+}
+
+.profilepage-settings-button:hover {
+  transform: scale(
+    1.3
+  ); /* 마우스를 올렸을 때 아이콘 크기를 약간 커지도록 transform 속성 수정 */
+}
+
+.profilepage-left-box-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+}
+
+.profilepage-left-box {
+  background-color: #e0e0e0;
+  height: 100%;
+  padding: 20px;
+}
+
+.profilepage-menu {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.profilepage-menu-button {
+  margin-top: 50px;
+  margin-left: 8px;
+  display: block;
+  width: 70%;
+  padding: 3px;
+  text-align: center;
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.profilepage-menu-button:hover {
+  background-color: #e0e0e0;
+  filter: brightness(90%);
+}
+
+.profilepage-main {
+  position: relative;
+  margin-top: 200px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 가로 3개의 칼럼 */
+  gap: 0px;
+}
+
+.profilepage-card {
+  margin-bottom: 50px;
+  margin-left: 55px;
+  margin-top: 50px;
+  width: 300px; /* 카드의 너비를 300px로 설정 */
+  height: 300px; /* 카드의 높이를 300px로 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.profilepage-card:hover {
+  transform: scale(1.05);
+}
