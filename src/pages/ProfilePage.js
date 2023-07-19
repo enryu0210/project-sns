@@ -1,6 +1,7 @@
 /*ProfilePage.js*/
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProfilePage.css"; // CSS 파일을 import 합니다.
 
 // 헤더 컴포넌트
@@ -26,9 +27,43 @@ function Header() {
 
 // 왼쪽 박스 컴포넌트
 function LeftBox() {
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    console.log("홈 버튼이 클릭되었습니다.");
+    navigate("/");
+  };
+
+  const handleFriendClick = () => {
+    console.log("친구 버튼이 클릭되었습니다.");
+    navigate("/friend");
+  };
+
+  const handleCategoryClick = () => {
+    console.log("카테고리 버튼이 클릭되었습니다.");
+    navigate("/category");
+  };
   return (
     <div className="profilepage-left-box-container">
-      <div className="profilepage-left-box">왼쪽 박스</div>
+      <div className="profilepage-left-box">
+        <div className="profilepage-menu">
+          <button className="profilepage-menu-button" onClick={handleHomeClick}>
+            <span class="material-symbols-outlined">home</span>
+          </button>
+          <button
+            className="profilepage-menu-button"
+            onClick={handleFriendClick}
+          >
+            <span class="material-symbols-outlined">group</span>
+          </button>
+          <button
+            className="profilepage-menu-button"
+            onClick={handleCategoryClick}
+          >
+            <span class="material-symbols-outlined">format_list_bulleted</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -37,18 +72,18 @@ function LeftBox() {
 function Main() {
   return (
     <div className="profilepage-main">
-      <div className="profilepage-card">카드 1</div>
-      <div className="profilepage-card">카드 2</div>
-      <div className="profilepage-card">카드 3</div>
-      <div className="profilepage-card">카드 4</div>
-      <div className="profilepage-card">카드 5</div>
-      <div className="profilepage-card">카드 6</div>
-      <div className="profilepage-card">카드 7</div>
-      <div className="profilepage-card">카드 8</div>
-      <div className="profilepage-card">카드 9</div>
-      <div className="profilepage-card">카드 10</div>
-      <div className="profilepage-card">카드 11</div>
-      <div className="profilepage-card">카드 12</div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
+      <div className="profilepage-card"></div>
     </div>
   );
 }

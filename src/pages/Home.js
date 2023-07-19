@@ -32,15 +32,15 @@ function Home() {
   return (
     <div className="container">
       <header>
-        <button className="profile-button" onClick={handleProfileClick}>
-          {/* 프로필 버튼 내용 */}
-        </button>
         <div className="search-box">
           <input type="text" placeholder="검색..." />
           <button className="search-icon" onClick={handleSearch}>
             <FiSearch />
           </button>
         </div>
+        <button className="profile-button" onClick={handleProfileClick}>
+          {/* 프로필 버튼 내용 */}
+        </button>
       </header>
       <div className="left-box">
         <div className="menu">

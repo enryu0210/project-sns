@@ -84,9 +84,32 @@
 }
 
 .profilepage-left-box {
-  background-color: gray;
+  background-color: #e0e0e0;
   height: 100%;
   padding: 20px;
+}
+
+.profilepage-menu {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.profilepage-menu-button {
+  margin-top: 50px;
+  margin-left: 8px;
+  display: block;
+  width: 70%;
+  padding: 3px;
+  text-align: center;
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.profilepage-menu-button:hover {
+  background-color: #e0e0e0;
+  filter: brightness(90%);
 }
 
 .profilepage-main {

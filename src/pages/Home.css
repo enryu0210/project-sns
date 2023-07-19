@@ -22,7 +22,7 @@ header {
   height: 60px;
   border-radius: 50%;
   background-color: #c0c0c0;
-  margin-left: 70px;
+  margin-right: 70px;
   cursor: pointer;
   /* 동그란 프로필 버튼에 대한 추가적인 스타일링은 여기에 작성하시면 됩니다 */
 }
